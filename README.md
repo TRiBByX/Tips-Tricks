@@ -2,4 +2,6 @@
 ---
 ## This page will a linux commands page as well as navigation throughout the different kinds of documents.
 ## BASH
-`netstat -lntp` 
+|Command|Explenation|
+|-------|-----------| 
+|`netstat -lntp`|Shows running and open ports and whats listening on them|

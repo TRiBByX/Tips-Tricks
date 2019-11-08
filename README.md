@@ -8,7 +8,7 @@
     <th>Explenation</th>
     </tr>
     <tr>
-    <th><code>netstat -lntp<code></th>
+    <th><code>netstat -lntp</code></th>
     <th>Shows running and open ports and whats listening on them</th>
     </tr>
 </table>

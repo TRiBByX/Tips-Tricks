@@ -17,8 +17,6 @@ title: Tips & Tricks
 email: christoffer.ssj@gmail.com
 baseurl: "/Tips-tricks" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: wibbyx
-github_username:  tribbyx
 
 # Build settings
 markdown: kramdown

@@ -1,7 +1,5 @@
 #!/bin/bash
-
-git status
+git pull
 git add .
 git commit -m 'changes to the doc'
-git status
 git push

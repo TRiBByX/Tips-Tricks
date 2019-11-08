@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Tips & Tricks
 email: christoffer.ssj@gmail.com
-baseurl: "/Tips-tricks" # the subpath of your site, e.g. /blog
+baseurl: "/Tips-Tricks" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings

@@ -3,24 +3,24 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Windows and Linux command cheat sheets | Tribbyx’s Tips &amp; Tricks</title>
+<title>Windows and Linux command cheat sheets | Tribbyx’s guides, tips, tricks and other black magic</title>
 <meta name="generator" content="Jekyll v3.8.6" />
 <meta property="og:title" content="Windows and Linux command cheat sheets" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="«««&lt; HEAD Various cheatsheets Preface ======= Various cheatsheets Preface gh-pages These cheatsheets are not exhaustive and don’t partain to anything specific, just commands and tools i have found useful or nice to know over the years. Some i have used extensivly and other not so much. Writing them down have been a good decision though. These will be maintained and updated as new stuff comes along. How to read Basically it’s very simple, the command is on the left and the description or explanation is on the right. Anything with _ around it, like _word_, means it is a user input. «««&lt; HEAD Bash Tips ======= Bash Tips gh-pages Set aliases for commands like having ll mean ls -lahrt or the like. This is edited in the .bashrc. add the following: alias _alias_=&#39;_command_&#39; Need line numbers in vim? Append set num to the .vimrc. «««&lt; HEAD Commands Command Description netstat -lntp Shows running ports and what&#39;s listening on them. find -name &#39;filename&#39; xargs rm &lt;/td&gt; Delete any file with a specific name. &lt;/tr&gt; tree -a Requires Tree. Display a tree structure of a folder. mv _origin_foldername_/* _targetfolder_/ Move folder and subfolder (only subfolder non-recursive) to target folder. l -lahrt -l use a long listing format, -a don&#39;t ignore entries starting with &#39;.&#39;, -h human readable, -r reverse order while sorting, -t sort by newest virtualenv -p python _name of env_ Create a python virtual environment for testing and isolation. ps -aux | less List running services into less for readability. watch -n 0.5 &#39;ps -aux&#39; Watch running services at an interval of 0.5 seconds. curl ipinfo.ip/ip Find external ip address. cat _filename_ | less Print file contents and pipe into Less for readability sudo dpkg -i _filename_ install .deb files iperf -s&amp;i perf -c _ip_ To check connection between two machines. -s is for the server, -c _ip_ is to connect to the server. sed -i &#39;s/\&lt;_orig_string\&gt;/_new_string_&#39; _path_to_file_ Replace original string with a new string in a file. scp _filename_ _user_@_ip/hostname_:_host_directory_ Copies a file between a host machine and remote machine. Ex. scp c:\users\user\file.txt root@127.0.0.1:usr/users/home `watch -n 0.5 &#39;netstat -nat grep -v -i listen&#39; See live tcp connections excluding ones that are listening watch -n _time_ &#39;_command_&#39; See output of _command_ updated every _time_ seconds tcpdump -w _filename_.pcap Capture a .pcap dump of local traffic. ssh -L _remote_port_:_localhost_:_localport_ _user_@_ip/hostname_ Reverse port, like port forwarding. df -h See diskspace. -h makes it human readable top Check ressource usage. Press 1 to see per core usage cat /etc/*release Check distro. ======= ### Commands --- | Command | Description | |-------|--------| | `netstat -lntp` | Shows running ports and what&#39;s listening on them. | | `find -name &#39;filename&#39; xargs rm` | Delete any file with a specific name. | | `tree -a` | **Requires Tree**. Display a tree structure of a folder. | | `mv _origin_foldername_/* _targetfolder_/` | Move folder and subfolder (only subfolder non-recursive) to target folder. | | `l -lahrt` | `-l` use a long listing format, `-a` don&#39;t ignore entries starting with &#39;.&#39;, `-h` human readable, `-r` reverse order while sorting, `-t` sort by newest. | | `virtualenv -p python _name of env_` | Create a python virtual environment for testing and isolation. | | `ps -aux | less` | List running services into less for readability. | | `watch -n 0.5 &#39;ps -aux&#39;` | Watch running services at an interval of 0.5 seconds. | | `curl ipinfo.ip/ip` | Find external ip address. | | `cat _filename_ | less` | Print file contents and pipe into Less for readability. | | `sudo dpkg -i _filename_` | install .deb files | | `iperf -s` &amp; `iperf -c _ip_`| To check connection between two machines. `-s` is for the server, is to connect to the server. | | `sed -i &#39;s/\&lt;_orig_string\&gt;/_new_string_&#39; _path_to_file_` | Replace original string with a new string in a file. | | `scp _filename_ _user_@_ip/hostname_:_host_directory_` | Copies a file between a host machine and remote machine. Ex. `scp c:\users\user\file.txt root@127.0.0.1:usr/users/home` | | `watch -n _time_ &#39;_command_&#39;` | See output of `_command_` updated every `_time_` seconds | | `watch -n 0.5 &#39;netstat -nat grep -v -i listen` | See live tcp connections excluding ones that are listening | | `tcpdump -w _filename_.pcap` | Capture a .pcap dump of local traffic. | | `ssh -L _remote_port_:_localhost_:_localport_ _user_@_ip/hostname_` | Reverse port, like port forwarding. | | `df -h` | See diskspace. `-h` makes it human readable. | | `top` | Check ressource usage. Press 1 to see per core usage. | | `cat /etc/*release` | Check distro. | &gt;&gt;&gt;&gt;&gt;&gt;&gt; gh-pages Windows Tips * `win + ctrl + b` restarts the graphics driver on windows. &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD Commands CMD Command Description psftp _putty_sessions_name &amp; put _filename_ REQUIRES PUTTY. Opens a psftp shell and put means to transfer the file through the putty session. netstat -an | find /i &quot;port|listening|esbalished|etc&quot; Like netstat in linux. Find specifies what you are looking for. /i makes in case insesitive. Powershell Nothing to see here... yet! ======= ### Commands #### CMD | Command | Description | |-------|--------| | `psftp _putty_sessions_name_` then `put _filename_` | **REQUIRES PUTTY**. Opens a psftp shell and put means to transfer the file through the putty session. | | `netstat -an | find /i &quot;port|listening|esbalished|etc&quot;` | Like netstat in linux. Find specifies what you are looking for. `-i` makes in case insesitive. | #### Powershell Nothing to see here... yet! &gt;&gt;&gt;&gt;&gt;&gt;&gt; gh-pages" />
-<meta property="og:description" content="«««&lt; HEAD Various cheatsheets Preface ======= Various cheatsheets Preface gh-pages These cheatsheets are not exhaustive and don’t partain to anything specific, just commands and tools i have found useful or nice to know over the years. Some i have used extensivly and other not so much. Writing them down have been a good decision though. These will be maintained and updated as new stuff comes along. How to read Basically it’s very simple, the command is on the left and the description or explanation is on the right. Anything with _ around it, like _word_, means it is a user input. «««&lt; HEAD Bash Tips ======= Bash Tips gh-pages Set aliases for commands like having ll mean ls -lahrt or the like. This is edited in the .bashrc. add the following: alias _alias_=&#39;_command_&#39; Need line numbers in vim? Append set num to the .vimrc. «««&lt; HEAD Commands Command Description netstat -lntp Shows running ports and what&#39;s listening on them. find -name &#39;filename&#39; xargs rm &lt;/td&gt; Delete any file with a specific name. &lt;/tr&gt; tree -a Requires Tree. Display a tree structure of a folder. mv _origin_foldername_/* _targetfolder_/ Move folder and subfolder (only subfolder non-recursive) to target folder. l -lahrt -l use a long listing format, -a don&#39;t ignore entries starting with &#39;.&#39;, -h human readable, -r reverse order while sorting, -t sort by newest virtualenv -p python _name of env_ Create a python virtual environment for testing and isolation. ps -aux | less List running services into less for readability. watch -n 0.5 &#39;ps -aux&#39; Watch running services at an interval of 0.5 seconds. curl ipinfo.ip/ip Find external ip address. cat _filename_ | less Print file contents and pipe into Less for readability sudo dpkg -i _filename_ install .deb files iperf -s&amp;i perf -c _ip_ To check connection between two machines. -s is for the server, -c _ip_ is to connect to the server. sed -i &#39;s/\&lt;_orig_string\&gt;/_new_string_&#39; _path_to_file_ Replace original string with a new string in a file. scp _filename_ _user_@_ip/hostname_:_host_directory_ Copies a file between a host machine and remote machine. Ex. scp c:\users\user\file.txt root@127.0.0.1:usr/users/home `watch -n 0.5 &#39;netstat -nat grep -v -i listen&#39; See live tcp connections excluding ones that are listening watch -n _time_ &#39;_command_&#39; See output of _command_ updated every _time_ seconds tcpdump -w _filename_.pcap Capture a .pcap dump of local traffic. ssh -L _remote_port_:_localhost_:_localport_ _user_@_ip/hostname_ Reverse port, like port forwarding. df -h See diskspace. -h makes it human readable top Check ressource usage. Press 1 to see per core usage cat /etc/*release Check distro. ======= ### Commands --- | Command | Description | |-------|--------| | `netstat -lntp` | Shows running ports and what&#39;s listening on them. | | `find -name &#39;filename&#39; xargs rm` | Delete any file with a specific name. | | `tree -a` | **Requires Tree**. Display a tree structure of a folder. | | `mv _origin_foldername_/* _targetfolder_/` | Move folder and subfolder (only subfolder non-recursive) to target folder. | | `l -lahrt` | `-l` use a long listing format, `-a` don&#39;t ignore entries starting with &#39;.&#39;, `-h` human readable, `-r` reverse order while sorting, `-t` sort by newest. | | `virtualenv -p python _name of env_` | Create a python virtual environment for testing and isolation. | | `ps -aux | less` | List running services into less for readability. | | `watch -n 0.5 &#39;ps -aux&#39;` | Watch running services at an interval of 0.5 seconds. | | `curl ipinfo.ip/ip` | Find external ip address. | | `cat _filename_ | less` | Print file contents and pipe into Less for readability. | | `sudo dpkg -i _filename_` | install .deb files | | `iperf -s` &amp; `iperf -c _ip_`| To check connection between two machines. `-s` is for the server, is to connect to the server. | | `sed -i &#39;s/\&lt;_orig_string\&gt;/_new_string_&#39; _path_to_file_` | Replace original string with a new string in a file. | | `scp _filename_ _user_@_ip/hostname_:_host_directory_` | Copies a file between a host machine and remote machine. Ex. `scp c:\users\user\file.txt root@127.0.0.1:usr/users/home` | | `watch -n _time_ &#39;_command_&#39;` | See output of `_command_` updated every `_time_` seconds | | `watch -n 0.5 &#39;netstat -nat grep -v -i listen` | See live tcp connections excluding ones that are listening | | `tcpdump -w _filename_.pcap` | Capture a .pcap dump of local traffic. | | `ssh -L _remote_port_:_localhost_:_localport_ _user_@_ip/hostname_` | Reverse port, like port forwarding. | | `df -h` | See diskspace. `-h` makes it human readable. | | `top` | Check ressource usage. Press 1 to see per core usage. | | `cat /etc/*release` | Check distro. | &gt;&gt;&gt;&gt;&gt;&gt;&gt; gh-pages Windows Tips * `win + ctrl + b` restarts the graphics driver on windows. &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD Commands CMD Command Description psftp _putty_sessions_name &amp; put _filename_ REQUIRES PUTTY. Opens a psftp shell and put means to transfer the file through the putty session. netstat -an | find /i &quot;port|listening|esbalished|etc&quot; Like netstat in linux. Find specifies what you are looking for. /i makes in case insesitive. Powershell Nothing to see here... yet! ======= ### Commands #### CMD | Command | Description | |-------|--------| | `psftp _putty_sessions_name_` then `put _filename_` | **REQUIRES PUTTY**. Opens a psftp shell and put means to transfer the file through the putty session. | | `netstat -an | find /i &quot;port|listening|esbalished|etc&quot;` | Like netstat in linux. Find specifies what you are looking for. `-i` makes in case insesitive. | #### Powershell Nothing to see here... yet! &gt;&gt;&gt;&gt;&gt;&gt;&gt; gh-pages" />
+<meta name="description" content="Various cheatsheets Preface These cheatsheets are not exhaustive and don’t partain to anything specific, just commands and tools i have found useful or nice to know over the years. Some i have used extensivly and other not so much. Writing them down have been a good decision though. These will be maintained and updated as new stuff comes along. How to read Basically it’s very simple, the command is on the left and the description or explanation is on the right. Anything with _ around it, like _word_, means it is a user input. Bash Tips Set aliases for commands like having ll mean ls -lahrt or the like. This is edited in the .bashrc. add the following: alias _alias_=&#39;_command_&#39; Need line numbers in vim? Append set num to the .vimrc. Commands Command Description netstat -lntp Shows running ports and what’s listening on them. find -name &#39;filename&#39; xargs rm Delete any file with a specific name. tree -a Requires Tree. Display a tree structure of a folder. mv _origin_foldername_/* _targetfolder_/ Move folder and subfolder (only subfolder non-recursive) to target folder. l -lahrt -l use a long listing format, -a don’t ignore entries starting with ‘.’, -h human readable, -r reverse order while sorting, -t sort by newest. virtualenv -p python _name of env_ Create a python virtual environment for testing and isolation. ps -aux | less List running services into less for readability. watch -n 0.5 &#39;ps -aux&#39; Watch running services at an interval of 0.5 seconds. curl ipinfo.ip/ip Find external ip address. cat _filename_ | less Print file contents and pipe into Less for readability. sudo dpkg -i _filename_ install .deb files iperf -s &amp; iperf -c _ip_ To check connection between two machines. -s is for the server, is to connect to the server. sed -i &#39;s/\&lt;_orig_string\&gt;/_new_string_&#39; _path_to_file_ Replace original string with a new string in a file. scp _filename_ _user_@_ip/hostname_:_host_directory_ Copies a file between a host machine and remote machine. Ex. scp c:\users\user\file.txt root@127.0.0.1:usr/users/home watch -n _time_ &#39;_command_&#39; See output of _command_ updated every _time_ seconds watch -n 0.5 &#39;netstat -nat grep -v -i listen See live tcp connections excluding ones that are listening tcpdump -w _filename_.pcap Capture a .pcap dump of local traffic. ssh -L _remote_port_:_localhost_:_localport_ _user_@_ip/hostname_ Reverse port, like port forwarding. df -h See diskspace. -h makes it human readable. top Check ressource usage. Press 1 to see per core usage. cat /etc/*release Check distro. Windows Tips win + ctrl + b restarts the graphics driver on windows. Commands CMD Command Description psftp _putty_sessions_name_ then put _filename_ REQUIRES PUTTY. Opens a psftp shell and put means to transfer the file through the putty session. netstat -an | find /i &quot;port|listening|esbalished|etc&quot; Like netstat in linux. Find specifies what you are looking for. -i makes in case insesitive. Powershell Nothing to see here… yet!" />
+<meta property="og:description" content="Various cheatsheets Preface These cheatsheets are not exhaustive and don’t partain to anything specific, just commands and tools i have found useful or nice to know over the years. Some i have used extensivly and other not so much. Writing them down have been a good decision though. These will be maintained and updated as new stuff comes along. How to read Basically it’s very simple, the command is on the left and the description or explanation is on the right. Anything with _ around it, like _word_, means it is a user input. Bash Tips Set aliases for commands like having ll mean ls -lahrt or the like. This is edited in the .bashrc. add the following: alias _alias_=&#39;_command_&#39; Need line numbers in vim? Append set num to the .vimrc. Commands Command Description netstat -lntp Shows running ports and what’s listening on them. find -name &#39;filename&#39; xargs rm Delete any file with a specific name. tree -a Requires Tree. Display a tree structure of a folder. mv _origin_foldername_/* _targetfolder_/ Move folder and subfolder (only subfolder non-recursive) to target folder. l -lahrt -l use a long listing format, -a don’t ignore entries starting with ‘.’, -h human readable, -r reverse order while sorting, -t sort by newest. virtualenv -p python _name of env_ Create a python virtual environment for testing and isolation. ps -aux | less List running services into less for readability. watch -n 0.5 &#39;ps -aux&#39; Watch running services at an interval of 0.5 seconds. curl ipinfo.ip/ip Find external ip address. cat _filename_ | less Print file contents and pipe into Less for readability. sudo dpkg -i _filename_ install .deb files iperf -s &amp; iperf -c _ip_ To check connection between two machines. -s is for the server, is to connect to the server. sed -i &#39;s/\&lt;_orig_string\&gt;/_new_string_&#39; _path_to_file_ Replace original string with a new string in a file. scp _filename_ _user_@_ip/hostname_:_host_directory_ Copies a file between a host machine and remote machine. Ex. scp c:\users\user\file.txt root@127.0.0.1:usr/users/home watch -n _time_ &#39;_command_&#39; See output of _command_ updated every _time_ seconds watch -n 0.5 &#39;netstat -nat grep -v -i listen See live tcp connections excluding ones that are listening tcpdump -w _filename_.pcap Capture a .pcap dump of local traffic. ssh -L _remote_port_:_localhost_:_localport_ _user_@_ip/hostname_ Reverse port, like port forwarding. df -h See diskspace. -h makes it human readable. top Check ressource usage. Press 1 to see per core usage. cat /etc/*release Check distro. Windows Tips win + ctrl + b restarts the graphics driver on windows. Commands CMD Command Description psftp _putty_sessions_name_ then put _filename_ REQUIRES PUTTY. Opens a psftp shell and put means to transfer the file through the putty session. netstat -an | find /i &quot;port|listening|esbalished|etc&quot; Like netstat in linux. Find specifies what you are looking for. -i makes in case insesitive. Powershell Nothing to see here… yet!" />
 <link rel="canonical" href="http://localhost:4000/cheat/sheet/2019/11/11/Windows-and-Linux-command-cheat-sheets.html" />
 <meta property="og:url" content="http://localhost:4000/cheat/sheet/2019/11/11/Windows-and-Linux-command-cheat-sheets.html" />
-<meta property="og:site_name" content="Tribbyx’s Tips &amp; Tricks" />
+<meta property="og:site_name" content="Tribbyx’s guides, tips, tricks and other black magic" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-11-11T11:30:00+01:00" />
 <script type="application/ld+json">
-{"headline":"Windows and Linux command cheat sheets","dateModified":"2019-11-11T11:30:00+01:00","datePublished":"2019-11-11T11:30:00+01:00","url":"http://localhost:4000/cheat/sheet/2019/11/11/Windows-and-Linux-command-cheat-sheets.html","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/cheat/sheet/2019/11/11/Windows-and-Linux-command-cheat-sheets.html"},"description":"«««&lt; HEAD Various cheatsheets Preface ======= Various cheatsheets Preface gh-pages These cheatsheets are not exhaustive and don’t partain to anything specific, just commands and tools i have found useful or nice to know over the years. Some i have used extensivly and other not so much. Writing them down have been a good decision though. These will be maintained and updated as new stuff comes along. How to read Basically it’s very simple, the command is on the left and the description or explanation is on the right. Anything with _ around it, like _word_, means it is a user input. «««&lt; HEAD Bash Tips ======= Bash Tips gh-pages Set aliases for commands like having ll mean ls -lahrt or the like. This is edited in the .bashrc. add the following: alias _alias_=&#39;_command_&#39; Need line numbers in vim? Append set num to the .vimrc. «««&lt; HEAD Commands Command Description netstat -lntp Shows running ports and what&#39;s listening on them. find -name &#39;filename&#39; xargs rm &lt;/td&gt; Delete any file with a specific name. &lt;/tr&gt; tree -a Requires Tree. Display a tree structure of a folder. mv _origin_foldername_/* _targetfolder_/ Move folder and subfolder (only subfolder non-recursive) to target folder. l -lahrt -l use a long listing format, -a don&#39;t ignore entries starting with &#39;.&#39;, -h human readable, -r reverse order while sorting, -t sort by newest virtualenv -p python _name of env_ Create a python virtual environment for testing and isolation. ps -aux | less List running services into less for readability. watch -n 0.5 &#39;ps -aux&#39; Watch running services at an interval of 0.5 seconds. curl ipinfo.ip/ip Find external ip address. cat _filename_ | less Print file contents and pipe into Less for readability sudo dpkg -i _filename_ install .deb files iperf -s&amp;i perf -c _ip_ To check connection between two machines. -s is for the server, -c _ip_ is to connect to the server. sed -i &#39;s/\\&lt;_orig_string\\&gt;/_new_string_&#39; _path_to_file_ Replace original string with a new string in a file. scp _filename_ _user_@_ip/hostname_:_host_directory_ Copies a file between a host machine and remote machine. Ex. scp c:\\users\\user\\file.txt root@127.0.0.1:usr/users/home `watch -n 0.5 &#39;netstat -nat grep -v -i listen&#39; See live tcp connections excluding ones that are listening watch -n _time_ &#39;_command_&#39; See output of _command_ updated every _time_ seconds tcpdump -w _filename_.pcap Capture a .pcap dump of local traffic. ssh -L _remote_port_:_localhost_:_localport_ _user_@_ip/hostname_ Reverse port, like port forwarding. df -h See diskspace. -h makes it human readable top Check ressource usage. Press 1 to see per core usage cat /etc/*release Check distro. ======= ### Commands --- | Command | Description | |-------|--------| | `netstat -lntp` | Shows running ports and what&#39;s listening on them. | | `find -name &#39;filename&#39; xargs rm` | Delete any file with a specific name. | | `tree -a` | **Requires Tree**. Display a tree structure of a folder. | | `mv _origin_foldername_/* _targetfolder_/` | Move folder and subfolder (only subfolder non-recursive) to target folder. | | `l -lahrt` | `-l` use a long listing format, `-a` don&#39;t ignore entries starting with &#39;.&#39;, `-h` human readable, `-r` reverse order while sorting, `-t` sort by newest. | | `virtualenv -p python _name of env_` | Create a python virtual environment for testing and isolation. | | `ps -aux | less` | List running services into less for readability. | | `watch -n 0.5 &#39;ps -aux&#39;` | Watch running services at an interval of 0.5 seconds. | | `curl ipinfo.ip/ip` | Find external ip address. | | `cat _filename_ | less` | Print file contents and pipe into Less for readability. | | `sudo dpkg -i _filename_` | install .deb files | | `iperf -s` &amp; `iperf -c _ip_`| To check connection between two machines. `-s` is for the server, is to connect to the server. | | `sed -i &#39;s/\\&lt;_orig_string\\&gt;/_new_string_&#39; _path_to_file_` | Replace original string with a new string in a file. | | `scp _filename_ _user_@_ip/hostname_:_host_directory_` | Copies a file between a host machine and remote machine. Ex. `scp c:\\users\\user\\file.txt root@127.0.0.1:usr/users/home` | | `watch -n _time_ &#39;_command_&#39;` | See output of `_command_` updated every `_time_` seconds | | `watch -n 0.5 &#39;netstat -nat grep -v -i listen` | See live tcp connections excluding ones that are listening | | `tcpdump -w _filename_.pcap` | Capture a .pcap dump of local traffic. | | `ssh -L _remote_port_:_localhost_:_localport_ _user_@_ip/hostname_` | Reverse port, like port forwarding. | | `df -h` | See diskspace. `-h` makes it human readable. | | `top` | Check ressource usage. Press 1 to see per core usage. | | `cat /etc/*release` | Check distro. | &gt;&gt;&gt;&gt;&gt;&gt;&gt; gh-pages Windows Tips * `win + ctrl + b` restarts the graphics driver on windows. &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD Commands CMD Command Description psftp _putty_sessions_name &amp; put _filename_ REQUIRES PUTTY. Opens a psftp shell and put means to transfer the file through the putty session. netstat -an | find /i &quot;port|listening|esbalished|etc&quot; Like netstat in linux. Find specifies what you are looking for. /i makes in case insesitive. Powershell Nothing to see here... yet! ======= ### Commands #### CMD | Command | Description | |-------|--------| | `psftp _putty_sessions_name_` then `put _filename_` | **REQUIRES PUTTY**. Opens a psftp shell and put means to transfer the file through the putty session. | | `netstat -an | find /i &quot;port|listening|esbalished|etc&quot;` | Like netstat in linux. Find specifies what you are looking for. `-i` makes in case insesitive. | #### Powershell Nothing to see here... yet! &gt;&gt;&gt;&gt;&gt;&gt;&gt; gh-pages","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"Windows and Linux command cheat sheets","dateModified":"2019-11-11T11:30:00+01:00","datePublished":"2019-11-11T11:30:00+01:00","url":"http://localhost:4000/cheat/sheet/2019/11/11/Windows-and-Linux-command-cheat-sheets.html","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/cheat/sheet/2019/11/11/Windows-and-Linux-command-cheat-sheets.html"},"description":"Various cheatsheets Preface These cheatsheets are not exhaustive and don’t partain to anything specific, just commands and tools i have found useful or nice to know over the years. Some i have used extensivly and other not so much. Writing them down have been a good decision though. These will be maintained and updated as new stuff comes along. How to read Basically it’s very simple, the command is on the left and the description or explanation is on the right. Anything with _ around it, like _word_, means it is a user input. Bash Tips Set aliases for commands like having ll mean ls -lahrt or the like. This is edited in the .bashrc. add the following: alias _alias_=&#39;_command_&#39; Need line numbers in vim? Append set num to the .vimrc. Commands Command Description netstat -lntp Shows running ports and what’s listening on them. find -name &#39;filename&#39; xargs rm Delete any file with a specific name. tree -a Requires Tree. Display a tree structure of a folder. mv _origin_foldername_/* _targetfolder_/ Move folder and subfolder (only subfolder non-recursive) to target folder. l -lahrt -l use a long listing format, -a don’t ignore entries starting with ‘.’, -h human readable, -r reverse order while sorting, -t sort by newest. virtualenv -p python _name of env_ Create a python virtual environment for testing and isolation. ps -aux | less List running services into less for readability. watch -n 0.5 &#39;ps -aux&#39; Watch running services at an interval of 0.5 seconds. curl ipinfo.ip/ip Find external ip address. cat _filename_ | less Print file contents and pipe into Less for readability. sudo dpkg -i _filename_ install .deb files iperf -s &amp; iperf -c _ip_ To check connection between two machines. -s is for the server, is to connect to the server. sed -i &#39;s/\\&lt;_orig_string\\&gt;/_new_string_&#39; _path_to_file_ Replace original string with a new string in a file. scp _filename_ _user_@_ip/hostname_:_host_directory_ Copies a file between a host machine and remote machine. Ex. scp c:\\users\\user\\file.txt root@127.0.0.1:usr/users/home watch -n _time_ &#39;_command_&#39; See output of _command_ updated every _time_ seconds watch -n 0.5 &#39;netstat -nat grep -v -i listen See live tcp connections excluding ones that are listening tcpdump -w _filename_.pcap Capture a .pcap dump of local traffic. ssh -L _remote_port_:_localhost_:_localport_ _user_@_ip/hostname_ Reverse port, like port forwarding. df -h See diskspace. -h makes it human readable. top Check ressource usage. Press 1 to see per core usage. cat /etc/*release Check distro. Windows Tips win + ctrl + b restarts the graphics driver on windows. Commands CMD Command Description psftp _putty_sessions_name_ then put _filename_ REQUIRES PUTTY. Opens a psftp shell and put means to transfer the file through the putty session. netstat -an | find /i &quot;port|listening|esbalished|etc&quot; Like netstat in linux. Find specifies what you are looking for. -i makes in case insesitive. Powershell Nothing to see here… yet!","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Tribbyx's Tips & Tricks" /></head>
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Tribbyx's guides, tips, tricks and other black magic" /></head>
 <body><header class="site-header" role="banner">
 
-  <div class="wrapper"><a class="site-title" rel="author" href="/">Tribbyx&#39;s Tips &amp; Tricks</a><nav class="site-nav">
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Tribbyx&#39;s guides, tips, tricks and other black magic</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -45,31 +45,10 @@
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>«««&lt; HEAD</p>
-
-<h1 id="various-cheatsheets-">Various cheatsheets </h1>
-<h2 id="-preface-"> Preface </h2>
-
-<p>=======</p>
-<h1 id="various-cheatsheets">Various cheatsheets</h1>
+    <h1 id="various-cheatsheets">Various cheatsheets</h1>
 
 <h2 id="preface">Preface</h2>
-<blockquote>
-  <blockquote>
-    <blockquote>
-      <blockquote>
-        <blockquote>
-          <blockquote>
-            <blockquote>
-              <p>gh-pages
-These cheatsheets are not exhaustive and don’t partain to anything specific, just commands and tools i have found useful or nice to know over the years. Some i have used extensivly and other not so much. Writing them down have been a good decision though.</p>
-            </blockquote>
-          </blockquote>
-        </blockquote>
-      </blockquote>
-    </blockquote>
-  </blockquote>
-</blockquote>
+<p>These cheatsheets are not exhaustive and don’t partain to anything specific, just commands and tools i have found useful or nice to know over the years. Some i have used extensivly and other not so much. Writing them down have been a good decision though.</p>
 
 <p>These will be maintained and updated as new stuff comes along.</p>
 
@@ -77,271 +56,145 @@ These cheatsheets are not exhaustive and don’t partain to anything specific, j
 
 <p>Basically it’s very simple, the command is on the left and the description or explanation is on the right. Anything with _ around it, like <code class="highlighter-rouge">_word_</code>, means it is a user input.</p>
 
-<p>«««&lt; HEAD</p>
-
-<h2 id="-bash-"> Bash </h2>
-<h3 id="-tips-"> Tips </h3>
-
-<p>=======</p>
 <h2 id="bash">Bash</h2>
 
 <h3 id="tips">Tips</h3>
 <hr />
-<blockquote>
-  <blockquote>
-    <blockquote>
-      <blockquote>
-        <blockquote>
-          <blockquote>
-            <blockquote>
-              <p>gh-pages</p>
-              <ul>
-                <li>Set aliases for commands like having <code class="highlighter-rouge">ll</code> mean <code class="highlighter-rouge">ls -lahrt</code> or the like. This is edited in the .bashrc. add the following: <code class="highlighter-rouge">alias _alias_='_command_'</code></li>
-                <li>Need line numbers in vim? Append <code class="highlighter-rouge">set num</code> to the .vimrc.</li>
-              </ul>
-            </blockquote>
-          </blockquote>
-        </blockquote>
-      </blockquote>
-    </blockquote>
-  </blockquote>
-</blockquote>
+<ul>
+  <li>Set aliases for commands like having <code class="highlighter-rouge">ll</code> mean <code class="highlighter-rouge">ls -lahrt</code> or the like. This is edited in the .bashrc. add the following: <code class="highlighter-rouge">alias _alias_='_command_'</code></li>
+  <li>Need line numbers in vim? Append <code class="highlighter-rouge">set num</code> to the .vimrc.</li>
+</ul>
 
-<p>«««&lt; HEAD</p>
-
-<h3 id="-commands-"> Commands </h3>
+<h3 id="commands">Commands</h3>
+<hr />
 
 <table>
-<thead>
-<tr>
-<th>Command
-</th>
-<th>Description
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>netstat -lntp</code>
-</td>
-<td>Shows running ports and what's listening on them.
-</td>
-</tr>
-<tr>
-<td><code>find -name 'filename' xargs rm<code>
-&lt;/td&gt;
-<td>Delete any file with a specific name.
-</td>
-&lt;/tr&gt;
-<tr>
-<td><code>tree -a</code>
-</td>
-<td><strong>Requires Tree</strong>. Display a tree structure of a folder.
-</td>
-</tr>
-<tr>
-<td><code>mv _origin_foldername_/* _targetfolder_/</code>
-</td>
-<td>Move folder and subfolder (only subfolder non-recursive) to target folder.
-</td>
-</tr>
-<tr>
-<td><code>l -lahrt</code>
-</td>
-<td><code>-l</code> use a long listing format, <code>-a</code> don't ignore entries starting with '.', <code>-h</code> human readable, <code>-r</code> reverse order while sorting, <code>-t</code> sort by newest
-</td>
-</tr>
-<tr>
-<td><code>virtualenv -p python _name of env_</code>
-</td>
-<td>Create a python virtual environment for testing and isolation.
-</td>
-</tr>
-<tr>
-<td><code>ps -aux | less</code>
-</td>
-<td>List running services into less for readability.
-</td>
-</tr>
-<tr>
-<td><code>watch -n 0.5 'ps -aux'</code>
-</td>
-<td>Watch running services at an interval of 0.5 seconds.
-</td>
-</tr>
-<tr>
-<td><code>curl ipinfo.ip/ip</code>
-</td>
-<td>Find external ip address.
-</td>
-</tr>
-<tr>
-<td><code>cat _filename_ | less</code>
-</td>
-<td>Print file contents and pipe into Less for readability
-</td>
-</tr>
-<tr>
-<td><code>sudo dpkg -i _filename_</code>
-</td>
-<td>install .deb files
-</td>
-</tr>
-<tr>
-<td><code>iperf -s</code>&amp;<code>i perf -c _ip_</code>
-</td>
-<td>To check connection between two machines. <code>-s</code> is for the server, <code>-c _ip_</code> is to connect to the server.
-</td>
-</tr>
-<tr>
-<td><code>sed -i 's/\&lt;_orig_string\&gt;/_new_string_' _path_to_file_</code>
-</td>
-<td>Replace original string with a new string in a file.
-</td>
-</tr>
-<tr>
-<td><code>scp _filename_ _user_@_ip/hostname_:_host_directory_</code>
-</td>
-<td>Copies a file between a host machine and remote machine. Ex. scp c:\users\user\file.txt root@127.0.0.1:usr/users/home
-</td>
-</tr>
-<tr>
-<td><code>`watch -n 0.5 'netstat -nat grep -v -i listen'</code>
-</td>
-<td>See live tcp connections excluding ones that are listening
-</td>
-</tr>
-<tr>
-<td><code>watch -n _time_ '_command_'</code></td>
-<td>See output of <code>_command_</code> updated every <code>_time_</code> seconds</td>
-</tr>
-<tr>
-<td><code>tcpdump -w _filename_.pcap</code>
-</td>
-<td>Capture a .pcap dump of local traffic.
-</td>
-</tr>
-<tr>
-<td><code>ssh -L _remote_port_:_localhost_:_localport_ _user_@_ip/hostname_</code>
-</td>
-<td>Reverse port, like port forwarding.
-</td>
-</tr>
-<tr>
-<td><code>df -h</code>
-</td>
-<td>See diskspace. <code>-h</code> makes it human readable
-</td>
-</tr>
-<tr>
-<td><code>top</code>
-</td>
-<td>Check ressource usage. Press 1 to see per core usage
-</td>
-</tr>
-<tr>
-<td><code>cat /etc/*release</code>
-</td>
-<td>Check distro.
-</td>
-
-</tr>
-=======
-### Commands
----
-
-| Command | Description |
-|-------|--------|
-| `netstat -lntp` | Shows running ports and what's listening on them. | 
-| `find -name 'filename' xargs rm` | Delete any file with a specific name. | 
-| `tree -a` | **Requires Tree**. Display a tree structure of a folder. |
-| `mv _origin_foldername_/* _targetfolder_/` | Move folder and subfolder (only subfolder non-recursive) to target folder. |
-| `l -lahrt` | `-l` use a long listing format, `-a` don't ignore entries starting with '.', `-h` human readable, `-r` reverse order while sorting, `-t` sort by newest. |
-| `virtualenv -p python _name of env_` | Create a python virtual environment for testing and isolation. |
-| `ps -aux | less` | List running services into less for readability. |
-| `watch -n 0.5 'ps -aux'` | Watch running services at an interval of 0.5 seconds. |
-| `curl ipinfo.ip/ip` | Find external ip address. |
-| `cat _filename_ | less` | Print file contents and pipe into Less for readability. |
-| `sudo dpkg -i _filename_` | install .deb files |
-| `iperf -s` &amp;  `iperf -c _ip_`| To check connection between two machines. `-s` is for the server, is to connect to the server. |
-| `sed -i 's/\&lt;_orig_string\&gt;/_new_string_' _path_to_file_` | Replace original string with a new string in a file. |
-| `scp _filename_ _user_@_ip/hostname_:_host_directory_` | Copies a file between a host machine and remote machine. Ex. `scp c:\users\user\file.txt root@127.0.0.1:usr/users/home` |
-| `watch -n _time_ '_command_'` | See output of `_command_` updated every `_time_` seconds |
-| `watch -n 0.5 'netstat -nat grep -v -i listen` | See live tcp connections excluding ones that are listening |
-| `tcpdump -w _filename_.pcap` | Capture a .pcap dump of local traffic. |
-| `ssh -L _remote_port_:_localhost_:_localport_ _user_@_ip/hostname_` | Reverse port, like port forwarding. |
-| `df -h` | See diskspace. `-h` makes it human readable. |
-| `top` | Check ressource usage. Press 1 to see per core usage. |
-| `cat /etc/*release` | Check distro. |
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; gh-pages
-
-
-
-
-<h2>Windows
-</h2>
-
-<h3>Tips
-</h3>
-
-* `win + ctrl + b` restarts the graphics driver on windows.
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-
-
-<h3>Commands
-</h3>
-
-<h4>CMD
-</h4>
-
-<table>
-<thead>
-<tr>
-<th>Command
-</th>
-<th>Description
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>psftp _putty_sessions_name</code> &amp; <code>put _filename_
-</code>
-</td>
-<td><strong>REQUIRES PUTTY</strong>. Opens a psftp shell and put means to transfer the file through the putty session.
-</td>
-</tr>
-<tr>
-<td><code>netstat -an | find /i "port|listening|esbalished|etc"</code>
-</td>
-<td>Like netstat in linux. Find specifies what you are looking for. <code>/i</code> makes in case insesitive.
-</td>
-</tr>
-</tbody>
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">netstat -lntp</code></td>
+      <td>Shows running ports and what’s listening on them.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">find -name 'filename' xargs rm</code></td>
+      <td>Delete any file with a specific name.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">tree -a</code></td>
+      <td><strong>Requires Tree</strong>. Display a tree structure of a folder.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">mv _origin_foldername_/* _targetfolder_/</code></td>
+      <td>Move folder and subfolder (only subfolder non-recursive) to target folder.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">l -lahrt</code></td>
+      <td><code class="highlighter-rouge">-l</code> use a long listing format, <code class="highlighter-rouge">-a</code> don’t ignore entries starting with ‘.’, <code class="highlighter-rouge">-h</code> human readable, <code class="highlighter-rouge">-r</code> reverse order while sorting, <code class="highlighter-rouge">-t</code> sort by newest.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">virtualenv -p python _name of env_</code></td>
+      <td>Create a python virtual environment for testing and isolation.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">ps -aux | less</code></td>
+      <td>List running services into less for readability.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">watch -n 0.5 'ps -aux'</code></td>
+      <td>Watch running services at an interval of 0.5 seconds.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">curl ipinfo.ip/ip</code></td>
+      <td>Find external ip address.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">cat _filename_ | less</code></td>
+      <td>Print file contents and pipe into Less for readability.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">sudo dpkg -i _filename_</code></td>
+      <td>install .deb files</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">iperf -s</code> &amp;  <code class="highlighter-rouge">iperf -c _ip_</code></td>
+      <td>To check connection between two machines. <code class="highlighter-rouge">-s</code> is for the server, is to connect to the server.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">sed -i 's/\&lt;_orig_string\&gt;/_new_string_' _path_to_file_</code></td>
+      <td>Replace original string with a new string in a file.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">scp _filename_ _user_@_ip/hostname_:_host_directory_</code></td>
+      <td>Copies a file between a host machine and remote machine. Ex. <code class="highlighter-rouge">scp c:\users\user\file.txt root@127.0.0.1:usr/users/home</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">watch -n _time_ '_command_'</code></td>
+      <td>See output of <code class="highlighter-rouge">_command_</code> updated every <code class="highlighter-rouge">_time_</code> seconds</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">watch -n 0.5 'netstat -nat grep -v -i listen</code></td>
+      <td>See live tcp connections excluding ones that are listening</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">tcpdump -w _filename_.pcap</code></td>
+      <td>Capture a .pcap dump of local traffic.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">ssh -L _remote_port_:_localhost_:_localport_ _user_@_ip/hostname_</code></td>
+      <td>Reverse port, like port forwarding.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">df -h</code></td>
+      <td>See diskspace. <code class="highlighter-rouge">-h</code> makes it human readable.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">top</code></td>
+      <td>Check ressource usage. Press 1 to see per core usage.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">cat /etc/*release</code></td>
+      <td>Check distro.</td>
+    </tr>
+  </tbody>
 </table>
 
+<h2 id="windows-">Windows </h2>
 
+<h3 id="tips-">Tips </h3>
 
-<h4>Powershell
-</h4>
+<ul>
+  <li><code class="highlighter-rouge">win + ctrl + b</code> restarts the graphics driver on windows.
+    <h3 id="commands-1">Commands</h3>
+    <h4 id="cmd">CMD</h4>
+  </li>
+</ul>
 
-Nothing to see here... yet!
+<table>
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">psftp _putty_sessions_name_</code> then <code class="highlighter-rouge">put _filename_</code></td>
+      <td><strong>REQUIRES PUTTY</strong>. Opens a psftp shell and put means to transfer the file through the putty session.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">netstat -an | find /i "port|listening|esbalished|etc"</code></td>
+      <td>Like netstat in linux. Find specifies what you are looking for. <code class="highlighter-rouge">-i</code> makes in case insesitive.</td>
+    </tr>
+  </tbody>
+</table>
 
-
-
-=======
-### Commands
-#### CMD
-
-| Command | Description |
-|-------|--------|
-| `psftp _putty_sessions_name_` then `put _filename_` | **REQUIRES PUTTY**. Opens a psftp shell and put means to transfer the file through the putty session. |
-| `netstat -an | find /i "port|listening|esbalished|etc"` | Like netstat in linux. Find specifies what you are looking for. `-i` makes in case insesitive. |
-
-#### Powershell
-Nothing to see here... yet!
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; gh-pages
-</code></code></td></tr></tbody></table>
+<h4 id="powershell">Powershell</h4>
+<p>Nothing to see here… yet!</p>
 
   </div><a class="u-url" href="/cheat/sheet/2019/11/11/Windows-and-Linux-command-cheat-sheets.html" hidden></a>
 </article>
@@ -352,7 +205,7 @@ Nothing to see here... yet!
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">Tribbyx&#39;s Tips &amp; Tricks</h2>
+    <h2 class="footer-heading">Tribbyx&#39;s guides, tips, tricks and other black magic</h2>
 
   </div>
 

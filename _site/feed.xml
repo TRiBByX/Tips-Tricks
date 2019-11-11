@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-11T11:28:51+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Tribbyx’s Tips &amp;amp; Tricks</title><entry><title type="html">How to use tips and tricks</title><link href="http://localhost:4000/how-to/2019/11/11/How-to-use-site.html" rel="alternate" type="text/html" title="How to use tips and tricks" /><published>2019-11-11T10:22:00+01:00</published><updated>2019-11-11T10:22:00+01:00</updated><id>http://localhost:4000/how-to/2019/11/11/How-to-use-site</id><content type="html" xml:base="http://localhost:4000/how-to/2019/11/11/How-to-use-site.html">&lt;h1 id=&quot;how-to-use-tips-and-tricks&quot;&gt;How to use Tips and Tricks&lt;/h1&gt;
+&lt;h2 id=&quot;preface&quot;&gt;Preface&lt;/h2&gt;
+&lt;p&gt;This post will deal in particular to setting up a test environment, as well as how to create posts and what to do with them.&lt;/p&gt;
+
+&lt;p&gt;This is done in Ubuntu and in the Linux subsystem on Windows.&lt;/p&gt;
+
+&lt;h2 id=&quot;setting-up-the-test-environment&quot;&gt;Setting up the test environment&lt;/h2&gt;
+&lt;p&gt;Following &lt;a href=&quot;https://michelleful.github.io/code-blog//2014/02/28/setting-up-a-jekyll-blog-on-github-pages/&quot;&gt;this guide&lt;/a&gt; will get you most of the way.&lt;/p&gt;
+
+&lt;h3 id=&quot;issues&quot;&gt;Issues&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;When running the &lt;code class=&quot;highlighter-rouge&quot;&gt;bundler installer&lt;/code&gt; sometimes not all the gems are installed. After looking for a fix, Jekyll’s own website provided me with a command to fix the remaining dependencies.
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://jekyllrb.com/docs/installation/ubuntu/&quot;&gt;This page&lt;/a&gt; provides the fix. run &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get install ruby-full build-essential zlib1g-dev&lt;/code&gt; for fixing the dependencies. Then run &lt;code class=&quot;highlighter-rouge&quot;&gt;bundler installer again.&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Running the &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new .&lt;/code&gt; command creates a conflict because the directory contains the Gemfile and Gemfile.lock. to mitigate, follow what the output of the command suggests and run the command with the &lt;code class=&quot;highlighter-rouge&quot;&gt;--force&lt;/code&gt; tag. &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new . --force&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;From here on, following the instructions will work just fine.&lt;/p&gt;
+
+&lt;h3 id=&quot;useful-commands&quot;&gt;Useful commands:&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec jekyll serve --baseurl '' --watch&lt;/code&gt;  | Serving the website on localhost:4000&lt;/p&gt;</content><author><name></name></author><summary type="html">How to use Tips and Tricks Preface This post will deal in particular to setting up a test environment, as well as how to create posts and what to do with them. This is done in Ubuntu and in the Linux subsystem on Windows. Setting up the test environment Following this guide will get you most of the way. Issues When running the bundler installer sometimes not all the gems are installed. After looking for a fix, Jekyll’s own website provided me with a command to fix the remaining dependencies. This page provides the fix. run sudo apt-get install ruby-full build-essential zlib1g-dev for fixing the dependencies. Then run bundler installer again. Running the jekyll new . command creates a conflict because the directory contains the Gemfile and Gemfile.lock. to mitigate, follow what the output of the command suggests and run the command with the --force tag. jekyll new . --force From here on, following the instructions will work just fine. Useful commands: bundle exec jekyll serve --baseurl '' --watch | Serving the website on localhost:4000</summary></entry></feed>

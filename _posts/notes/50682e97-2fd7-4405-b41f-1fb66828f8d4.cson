@@ -1,0 +1,35 @@
+createdAt: "2019-11-11T09:28:04.621Z"
+updatedAt: "2019-11-11T10:15:43.874Z"
+type: "MARKDOWN_NOTE"
+folder: "f06509997790a073e8c1"
+title: "\"How to use tips and tricks\""
+tags: []
+content: '''
+  ---
+  layout: post
+  title:  "How to use tips and tricks"
+  date:   2019-11-11 10:22:00 +0100
+  categories: how-to
+  ---
+  # How to use Tips and Tricks
+  ## Preface
+  This post will deal in particular to setting up a test environment, as well as how to create posts and what to do with them.
+  
+  This is done in Ubuntu and in the Linux subsystem on Windows.
+  
+  ## Setting up the test environment
+  Following [this guide](https://michelleful.github.io/code-blog//2014/02/28/setting-up-a-jekyll-blog-on-github-pages/) will get you most of the way.
+  
+  ### Issues
+  * When running the `bundler installer` sometimes not all the gems are installed. After looking for a fix, Jekyll's own website provided me with a command to fix the remaining dependencies.
+    * [This page](https://jekyllrb.com/docs/installation/ubuntu/) provides the fix. run `sudo apt-get install ruby-full build-essential zlib1g-dev` for fixing the dependencies. Then run `bundler installer again.`
+  * Running the `jekyll new .` command creates a conflict because the directory contains the Gemfile and Gemfile.lock. to mitigate, follow what the output of the command suggests and run the command with the `--force` tag. `jekyll new . --force`
+  
+  From here on, following the instructions will work just fine. 
+  
+  ### Useful commands:
+  * `bundle exec jekyll serve --baseurl '' --watch` | Serving the website on localhost:4000
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

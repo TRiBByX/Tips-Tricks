@@ -21,6 +21,7 @@ Basically it's very simple, the command is on the left and the description or ex
 * Set aliases for commands like having `ll` mean `ls -lahrt` or the like. This is edited in the .bashrc. add the following: `alias _alias_='_command_'` 
 * Need line numbers in vim? Append `set num` to the .vimrc. 
 
+
 ### Commands
 ---
 

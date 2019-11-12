@@ -48,6 +48,7 @@ Basically it's very simple, the command is on the left and the description or ex
 | `df -h` | See diskspace. `-h` makes it human readable. |
 | `top` | Check ressource usage. Press 1 to see per core usage. |
 | `cat /etc/*release` | Check distro. |
+| `tail _file_` & `head _file_` | Show you either the tail end of the file or the head of the file. |
 
 ## Windows
 ### Tips

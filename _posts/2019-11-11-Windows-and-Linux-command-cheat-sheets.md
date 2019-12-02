@@ -49,6 +49,7 @@ Basically it's very simple, the command is on the left and the description or ex
 | `top` | Check ressource usage. Press 1 to see per core usage. |
 | `cat /etc/*release` | Check distro. |
 | `tail _file_` & `head _file_` | Show you either the tail end of the file or the head of the file. |
+|`find / -type d \( -perm -g+w -or -perm -o+w \) -exec ls -adl {} \;`| If you're on a very restrictive Linux shell, this command will find writable directories for you |
 
 ## Windows
 ### Tips

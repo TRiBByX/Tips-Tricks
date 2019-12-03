@@ -33,10 +33,10 @@ Basically it's very simple, the command is on the left and the description or ex
 | `mv _origin_foldername_/* _targetfolder_/` | Move folder and subfolder (only subfolder non-recursive) to target folder. |
 | `l -lahrt` | `-l` use a long listing format, `-a` don't ignore entries starting with '.', `-h` human readable, `-r` reverse order while sorting, `-t` sort by newest. |
 | `virtualenv -p python _name of env_` | Create a python virtual environment for testing and isolation. |
-| `ps -aux | less` | List running services into less for readability. |
+| ```ps -aux | less``` | List running services into less for readability. |
 | `watch -n 0.5 'ps -aux'` | Watch running services at an interval of 0.5 seconds. |
 | `curl ipinfo.ip/ip` | Find external ip address. |
-| `cat _filename_ | less` | Print file contents and pipe into Less for readability. |
+| ```cat _filename_ | less``` | Print file contents and pipe into Less for readability. |
 | `sudo dpkg -i _filename_` | install .deb files |
 | `iperf -s` &  `iperf -c _ip_`| To check connection between two machines. `-s` is for the server, is to connect to the server. |
 | `sed -i 's/\<_orig_string\>/_new_string_' _path_to_file_` | Replace original string with a new string in a file. |
